@@ -24,7 +24,7 @@ type Order record {|
     OrderDetail[] order_items;
 |};
 
-service on new http:Listener(8080) {
+service / on new http:Listener(8080) {
     private map<Order> orders = {
         "1025": {
             username: "mary_lou",
